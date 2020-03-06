@@ -1,1 +1,1 @@
-web: gunicorn portfolio.wsgi
+"web: gunicorn dj-project.wsgi" 
