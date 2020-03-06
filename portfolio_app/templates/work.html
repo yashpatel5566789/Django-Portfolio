@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+    <head>
+      <title>My Work</title>
+    </head>
+    <main id="work">
+      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <h2 class="sm-heading">
+        CHECK OUT SOME OF MY PROJECTS.
+      </h2>
+      <div class="projects">
+        <div class="item">
+          <a href="#!">
+            <img src="{% static 'img/projects/project1.jpg' %}" alt="project1" />
+          </a>
+          <a href="https://shopping-client.netlify.com/" class="btn-light">
+            <i class="fas fa-eye"></i>
+            Project
+          </a>
+          <a href="https://github.com/yashpatel5566789/Shopping-Client" class="btn-dark">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="{% static 'img/projects/project2.jpg' %}" alt="project1" />
+          </a>
+          <a href="https://authoritybookshell.herokuapp.com/" class="btn-light">
+            <i class="fas fa-eye"></i>
+            Project
+          </a>
+          <a href="https://github.com/yashpatel5566789/templates_book_authority" class="btn-dark">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+        {% comment %}
+        <div class="item">
+          <a href="#!">
+            <img src="{% static 'img/projects/project3.jpg' %}" alt="project1" />
+          </a>
+          <a href="https://cryptic-forest-42194.herokuapp.com/" class="btn-light">
+            <i class="fas fa-eye"></i>
+            Project
+          </a>
+          <a href="https://github.com/ArbaazAli/Craigslist" class="btn-dark">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="{% static 'img/projects/project4.jpg' %}" alt="project1" />
+          </a>
+          <a href="https://obscure-falls-35272.herokuapp.com/" class="btn-light">
+            <i class="fas fa-eye"></i>
+            Project
+          </a>
+          <a href="https://github.com/ArbaazAli/DjangoDental" class="btn-dark">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="{% static 'img/projects/project5.jpg' %}" alt="project1" />
+          </a>
+          <a href="#" class="btn-light">
+            <i class="fas fa-eye"></i>
+            Project
+          </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+        {% endcomment %}
+      </div>
+    </main>
+    <footer id="main-footer">
+      Copyrigh &copy; 2019, Yash Patel
+    </footer>
+  
+  {% endblock %}
