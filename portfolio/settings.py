@@ -27,7 +27,7 @@ SECRET_KEY = '1=*^*o5eg404^-)e^z*ym7h0um+ts3n!f+bxd-n3z_fu^tupi1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG',1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-18-222-145-107.us-east-2.compute.amazonaws.com','127.0.0.1']
 
 
 # Application definition
@@ -130,4 +130,4 @@ USE_TZ = True
 
 django_heroku.settings(locals())
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT = 'static/'
